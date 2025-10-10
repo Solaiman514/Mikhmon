@@ -69,62 +69,70 @@
 
 
                 <!-- =========================
-                     New: Internet Packages & Contact Info
-                     (Kept visually in the same wrap area, simple and clean)
-                     ========================= -->
-                <div class="packages-wrap" role="region" aria-label="Internet packages and contact information">
-                  <h3>ইন্টারনেট প্যাকেজসমূহ (সারসংক্ষেপ)</h3>
+     New: Internet Packages & Contact Info (Premium Design)
+     ========================= -->
+<div class="packages-wrap" role="region" aria-label="Internet packages and contact information"
+  style="max-width:900px;margin:40px auto;padding:30px;background:linear-gradient(145deg,#0a1c3a,#102a4c);border-radius:20px;box-shadow:0 8px 20px rgba(0,0,0,0.4);text-align:center;font-family:'Noto Sans Bengali',sans-serif;color:#fff;">
 
-                  <!-- Table: Package Name | স্পিড/ডেটা | মেয়াদ | দাম -->
-                  <table class="packages-table" aria-describedby="pkg-note">
-                    <thead>
-                      <tr>
-                        <th>প্যাকেজ</th>
-                        <th>বিবরণ</th>
-                        <th>মেয়াদ</th>
-                        <th>দাম (BDT)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><span class="pkg-badge">Basic</span></td>
-                        <td>প্রতি দিন 1GB ডেটা (লিমিটেড স্পিড)</td>
-                        <td>7 দিন</td>
-                        <td>৫০</td>
-                      </tr>
-                      <tr>
-                        <td><span class="pkg-badge">Standard</span></td>
-                        <td>প্রতি দিন 3GB ডেটা | মাঝারি স্পিড</td>
-                        <td>১৪ দিন</td>
-                        <td>১২০</td>
-                      </tr>
-                      <tr>
-                        <td><span class="pkg-badge">Premium</span></td>
-                        <td>প্রতি দিন অ-পরিষীম (শুরুর 10GB হাই-স্পিড)</td>
-                        <td>৩০ দিন</td>
-                        <td>২৫০</td>
-                      </tr>
-                      <tr>
-                        <td><span class="pkg-badge">Night Owl</span></td>
-                        <td>রাত (12:00–6:00) আনলিমিটেড ব্যান্ডউইথ</td>
-                        <td>৩০ দিন</td>
-                        <td>৯০</td>
-                      </tr>
-                    </tbody>
-                  </table>
+  <h3 style="font-size:26px;margin-bottom:25px;font-weight:700;color:#fff;border-bottom:2px solid rgba(255,255,255,0.2);display:inline-block;padding-bottom:8px;">
+    🌐 ইন্টারনেট প্যাকেজসমূহ (প্রিমিয়াম অফার)
+  </h3>
 
-                  <div id="pkg-note" style="font-size:13px;color:#dbe9ff;opacity:0.9;margin-bottom:8px;">
-                    <strong>নোট:</strong> উপরোক্ত প্যাকেজগুলো উদাহরণস্বরূপ দেখানো হয়েছে — আপনি চাইলে নাম, ডেটা, মেয়াদ ও দাম পরিবর্তন করে নিতে পারবেন।
-                  </div>
+  <!-- Stylish Cards -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;justify-items:center;">
 
-                  <div class="contact" role="contentinfo">
-                    <div><strong>যোগাযোগ:</strong></div>
-                    <div>ফোন: <strong>+88 01XXXXXXXXX</strong> (PLACEHOLDER - পরিবর্তন করুন)</div>
-                    <div>অফিস ঠিকানা: <strong>PLACEHOLDER: আপনার অফিস/শাখার পূর্ণ ঠিকানা, ঢাকা, বাংলাদেশ</strong></div>
-                    <div style="margin-top:8px;font-size:13px;opacity:0.95;">সাহায্য অথবা প্যাকেজ অ্যাকটিভেশনের জন্য অনুগ্রহ করে উপরোক্ত নম্বরে কল দিন অথবা আমাদের স্টোরে সরাসরি যোগাযোগ করুন।</div>
-                  </div>
-                </div>
-                <!-- end packages -->
+    <!-- Basic -->
+    <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(8px);padding:20px;border-radius:16px;width:100%;max-width:220px;transition:0.3s ease;border:1px solid rgba(255,255,255,0.15);">
+      <h4 style="font-size:20px;margin-bottom:10px;">🌀 Basic</h4>
+      <p style="font-size:14px;line-height:1.5;">প্রতি দিন <strong>1GB ডেটা</strong> (লিমিটেড স্পিড)</p>
+      <p style="font-size:14px;margin:6px 0;">⏳ মেয়াদ: <strong>7 দিন</strong></p>
+      <p style="font-size:18px;font-weight:700;color:#00ffc6;">৳ ৫০</p>
+    </div>
+
+    <!-- Standard -->
+    <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);padding:20px;border-radius:16px;width:100%;max-width:220px;transition:0.3s ease;border:1px solid rgba(255,255,255,0.2);">
+      <h4 style="font-size:20px;margin-bottom:10px;">🚀 Standard</h4>
+      <p style="font-size:14px;line-height:1.5;">প্রতি দিন <strong>3GB</strong> | মাঝারি স্পিড</p>
+      <p style="font-size:14px;margin:6px 0;">⏳ মেয়াদ: <strong>১৪ দিন</strong></p>
+      <p style="font-size:18px;font-weight:700;color:#00ffb7;">৳ ১২০</p>
+    </div>
+
+    <!-- Premium -->
+    <div style="background:linear-gradient(135deg,#0046ff,#00d4ff);color:#fff;padding:20px;border-radius:16px;width:100%;max-width:220px;box-shadow:0 0 15px rgba(0,255,200,0.3);transition:transform 0.3s;">
+      <h4 style="font-size:20px;margin-bottom:10px;">👑 Premium</h4>
+      <p style="font-size:14px;line-height:1.5;">অসীম ব্যবহারে প্রথম <strong>10GB হাই-স্পিড</strong></p>
+      <p style="font-size:14px;margin:6px 0;">⏳ মেয়াদ: <strong>৩০ দিন</strong></p>
+      <p style="font-size:18px;font-weight:700;">৳ ২৫০</p>
+    </div>
+
+    <!-- Night Owl -->
+    <div style="background:rgba(255,255,255,0.08);backdrop-filter:blur(8px);padding:20px;border-radius:16px;width:100%;max-width:220px;transition:0.3s ease;border:1px solid rgba(255,255,255,0.15);">
+      <h4 style="font-size:20px;margin-bottom:10px;">🌙 Night Owl</h4>
+      <p style="font-size:14px;line-height:1.5;">রাত 12:00–6:00 আনলিমিটেড ব্যান্ডউইথ</p>
+      <p style="font-size:14px;margin:6px 0;">⏳ মেয়াদ: <strong>৩০ দিন</strong></p>
+      <p style="font-size:18px;font-weight:700;color:#00ffc6;">৳ ৯০</p>
+    </div>
+  </div>
+
+  <!-- Note -->
+  <div id="pkg-note" style="font-size:13px;color:#cde9ff;opacity:0.9;margin:25px 0 10px;">
+    ⚠️ <strong>নোট:</strong> উপরোক্ত প্যাকেজগুলো উদাহরণস্বরূপ দেখানো হয়েছে — আপনি চাইলে নাম, ডেটা, মেয়াদ ও দাম পরিবর্তন করতে পারবেন।
+  </div>
+
+  <!-- Contact Info -->
+  <div class="contact" role="contentinfo"
+    style="margin-top:25px;background:rgba(255,255,255,0.06);padding:18px;border-radius:14px;max-width:650px;margin-left:auto;margin-right:auto;">
+    <div style="font-size:18px;font-weight:600;margin-bottom:8px;">📞 যোগাযোগ</div>
+    <div>ফোন: <strong style="color:#00ffea;">+88 01XXXXXXXXX</strong> (পরিবর্তন করুন)</div>
+    <div>অফিস ঠিকানা: <strong>আপনার অফিস/শাখার ঠিকানা, ঢাকা, বাংলাদেশ</strong></div>
+    <div style="margin-top:10px;font-size:13px;opacity:0.95;">সাহায্য বা প্যাকেজ অ্যাকটিভেশনের জন্য উপরোক্ত নম্বরে কল দিন অথবা আমাদের অফিসে যোগাযোগ করুন।</div>
+  </div>
+
+</div>
+<!-- =========================
+     End of Internet Packages & Contact Info
+     ========================= -->
+
 
                 
                 <p class="info bt">Powered by SITech Ltd. RouterOS</p>
@@ -142,5 +150,6 @@
 </body>
 
 </html>
+
 
 
