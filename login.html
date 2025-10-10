@@ -66,6 +66,67 @@
                     <input type="submit" value="Connect" />
 
                 </form>
+
+
+                <!-- =========================
+                     New: Internet Packages & Contact Info
+                     (Kept visually in the same wrap area, simple and clean)
+                     ========================= -->
+                <div class="packages-wrap" role="region" aria-label="Internet packages and contact information">
+                  <h3>ইন্টারনেট প্যাকেজসমূহ (সারসংক্ষেপ)</h3>
+
+                  <!-- Table: Package Name | স্পিড/ডেটা | মেয়াদ | দাম -->
+                  <table class="packages-table" aria-describedby="pkg-note">
+                    <thead>
+                      <tr>
+                        <th>প্যাকেজ</th>
+                        <th>বিবরণ</th>
+                        <th>মেয়াদ</th>
+                        <th>দাম (BDT)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><span class="pkg-badge">Basic</span></td>
+                        <td>প্রতি দিন 1GB ডেটা (লিমিটেড স্পিড)</td>
+                        <td>7 দিন</td>
+                        <td>৫০</td>
+                      </tr>
+                      <tr>
+                        <td><span class="pkg-badge">Standard</span></td>
+                        <td>প্রতি দিন 3GB ডেটা | মাঝারি স্পিড</td>
+                        <td>১৪ দিন</td>
+                        <td>১২০</td>
+                      </tr>
+                      <tr>
+                        <td><span class="pkg-badge">Premium</span></td>
+                        <td>প্রতি দিন অ-পরিষীম (শুরুর 10GB হাই-স্পিড)</td>
+                        <td>৩০ দিন</td>
+                        <td>২৫০</td>
+                      </tr>
+                      <tr>
+                        <td><span class="pkg-badge">Night Owl</span></td>
+                        <td>রাত (12:00–6:00) আনলিমিটেড ব্যান্ডউইথ</td>
+                        <td>৩০ দিন</td>
+                        <td>৯০</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div id="pkg-note" style="font-size:13px;color:#dbe9ff;opacity:0.9;margin-bottom:8px;">
+                    <strong>নোট:</strong> উপরোক্ত প্যাকেজগুলো উদাহরণস্বরূপ দেখানো হয়েছে — আপনি চাইলে নাম, ডেটা, মেয়াদ ও দাম পরিবর্তন করে নিতে পারবেন।
+                  </div>
+
+                  <div class="contact" role="contentinfo">
+                    <div><strong>যোগাযোগ:</strong></div>
+                    <div>ফোন: <strong>+88 01XXXXXXXXX</strong> (PLACEHOLDER - পরিবর্তন করুন)</div>
+                    <div>অফিস ঠিকানা: <strong>PLACEHOLDER: আপনার অফিস/শাখার পূর্ণ ঠিকানা, ঢাকা, বাংলাদেশ</strong></div>
+                    <div style="margin-top:8px;font-size:13px;opacity:0.95;">সাহায্য অথবা প্যাকেজ অ্যাকটিভেশনের জন্য অনুগ্রহ করে উপরোক্ত নম্বরে কল দিন অথবা আমাদের স্টোরে সরাসরি যোগাযোগ করুন।</div>
+                  </div>
+                </div>
+                <!-- end packages -->
+
+                
                 <p class="info bt">Powered by SITech Ltd. RouterOS</p>
 
             </div>
@@ -81,4 +142,5 @@
 </body>
 
 </html>
+
 
