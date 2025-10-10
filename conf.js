@@ -1,12 +1,3 @@
-# new-hotspot-01
-
-## config
-edit file conf.js
-
-- setCase : untuk mengatur input huruf besar(uppercase) atau huruf kecil(lowercase).
-- defaultMode : mengatur tampilan utama login page, voucher atau member(user & password).
-
-```javascript
 var config = {
 
 loginvc : "Masukkan Kode Voucher kemudian klik Connect.",
@@ -22,4 +13,3 @@ url : "https://demo.mikhmon.online", // url server Mikhmon
 SessionName : "demo", 
 
 }
-```
