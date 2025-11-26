@@ -69,199 +69,146 @@
 
 
 
-       <!-- ====== IMAGE SLIDER + TV NEWS TICKER (Images fully visible) ====== -->
-<section style="width:100%; background:#f7f7f7; padding:20px 0;">
-  <style>
-    :root{
-      /* Slider height পরিবর্তন করতে এখানে মান বদলাও */
-      --slider-height: 320px;
-      --slider-width: 90%;
-      --slider-gap: 0; /* slide gap (প্রয়োজনে বাড়াও) */
-    }
+     <!-- ===== CLEAN FULL-WIDTH SLIDER + TV NEWS TICKER ===== -->
+<section style="padding:0; margin:0;">
 
-    .slider-wrap {
-      width: var(--slider-width);
-      margin: 0 auto;
-    }
+<style>
+  .slider-wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+  }
 
-    .slider-container{
-      width: 100%;
-      height: var(--slider-height);
-      overflow: hidden;
-      position: relative;
-      border-radius: 10px;
-      background: #111; /* ব্যাকগ্রাউন্ড যাতে লেটারবক্স হালকা দেখা যায় */
-      display: block;
-    }
+  .slider-container{
+    width:100%;
+    height:320px; /* চাইলে 250 / 300 / 360 করে নিতে পারো */
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    position:relative;
+    background:none; /* কালো ব্যাকগ্রাউন্ড বাদ */
+  }
 
-    .slider{
-      display:flex;
-      height:100%;
-      transition: transform 0.9s ease;
-      gap: var(--slider-gap);
-      will-change: transform;
-    }
+  .slider{
+    display:flex;
+    height:100%;
+    margin:0;
+    padding:0;
+    transition:transform 0.9s ease;
+  }
 
-    .slide{
-      min-width:100%;
-      height:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: transparent;
-      box-sizing: border-box;
-      padding: 6px; /* optional padding যাতে ছোট ফ্রেম দেখায় */
-    }
+  .slide{
+    min-width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:none; /* কালো অংশ বাদ */
+  }
 
-    .slide img{
-      max-width:100%;
-      max-height:100%;
-      width:auto;
-      height:auto;
-      object-fit: contain; /* এখানে মূল কাজ: ছবি কাটা যাবে না, পুরো দেখা যাবে */
-      display:block;
-      border-radius:6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-      background: #111; /* যদি ছবিতে স্বচ্ছ অংশ থাকে */
-    }
+  .slide img{
+    max-height:100%;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
+    background:none; /* কালো বা ধূসর ব্যাকগ্রাউন্ড বাদ */
+  }
 
-    /* TV ticker */
-    .tv-ticker {
-      width: var(--slider-width);
-      margin: 14px auto 0 auto;
-      background: #000;
-      padding: 10px 12px;
-      overflow: hidden;
-      border-radius: 6px;
-      box-sizing: border-box;
-    }
-    .tv-ticker__inner{
-      display:inline-block;
-      white-space:nowrap;
-      font-weight:700;
-      font-size:18px;
-      color:#fff;
-      transform: translateX(100%);
-      will-change: transform;
-    }
+  /* NEWS TICKER CLEAN STYLE */
+  .ticker-wrap{
+    width:100%;
+    background:#000;
+    margin:0;
+    padding:10px 0;
+    overflow:hidden;
+  }
 
-    /* Responsive: ছোট স্ক্রিনে উচ্চতা কমাবে */
-    @media (max-width:700px){
-      :root { --slider-height: 220px; --slider-width: 96%; }
-      .tv-ticker__inner { font-size:16px; }
-    }
-  </style>
+  .ticker{
+    white-space:nowrap;
+    display:inline-block;
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    transform:translateX(100%);
+  }
+</style>
 
-  <div class="slider-wrap">
-    <div class="slider-container" aria-label="Image slider">
-      <div class="slider" id="autoSlider">
-        <!-- Slide 1 -->
-        <div class="slide">
-          <img src="img/Packages1.png" alt="Slide 1">
-        </div>
+<div class="slider-wrapper">
 
-        <!-- Slide 2 -->
-        <div class="slide">
-          <img src="img/Packages2.png" alt="Slide 2">
-        </div>
+  <!-- IMAGE SLIDER -->
+  <div class="slider-container">
+    <div class="slider" id="autoSlider">
 
-        <!-- Slide 3 -->
-        <div class="slide">
-          <img src="img/Packages3.png" alt="Slide 3">
-        </div>
-
-        <!-- আরও স্লাইড এখানে যুক্ত করতে পারো -->
+      <div class="slide">
+        <img src="img/Packages6.png" alt="">
       </div>
-    </div>
 
-    <!-- TV Headline Style Scrolling Text -->
-    <div class="tv-ticker" role="marquee" aria-live="polite">
-      <div id="newsTicker" class="tv-ticker__inner">
-        🔴 BREAKING NEWS: এখানে তোমার নিউজ স্ক্রল হবে — তুমি যেকোনো লেখা এখানে দিতে পারো — টেক্সট ধীরে ধীরে ডান থেকে বামে যাবে — 
+      <div class="slide">
+        <img src="img/Packages6.pngv" alt="">
       </div>
+
+      <div class="slide">
+        <img src="img/Packages6.png" alt="">
+      </div>
+
     </div>
   </div>
+
+  <!-- NEWS TICKER -->
+  <div class="ticker-wrap">
+    <div id="newsTicker" class="ticker">
+      🔴 BREAKING: এখানে তোমার নিউজ ডান দিক থেকে বামে স্ক্রল হবে — তুমি যেমন লিখবে ঠিক তেমনই দেখাবে —
+    </div>
+  </div>
+
+</div>
 
 </section>
 
 <script>
-  // ===== IMAGE AUTO-SLIDER =====
-  (function(){
-    const slider = document.getElementById('autoSlider');
-    const slides = slider.querySelectorAll('.slide');
-    const total = slides.length;
-    let idx = 0;
-    const intervalMs = 5000; // ডিফল্ট ৫ সেকেন্ড (চাইলে 10000 করে নাও)
+/* IMAGE AUTO SLIDER */
+let index = 0;
+const slider = document.getElementById("autoSlider");
+const slides = slider.children;
+const total = slides.length;
 
-    // duplicate first slide? not necessary for contain-style transitions
-    function goTo(i){
-      slider.style.transform = `translateX(-${i * 100}%)`;
-    }
+setInterval(() => {
+  index = (index + 1) % total;
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}, 5000);
 
-    let timer = setInterval(()=>{
-      idx = (idx + 1) % total;
-      goTo(idx);
-    }, intervalMs);
+/* NEWS TICKER */
+(function(){
+  const ticker = document.getElementById("newsTicker");
+  let pos;
 
-    // pause on hover (optional)
-    slider.parentElement.addEventListener('mouseenter', ()=> clearInterval(timer));
-    slider.parentElement.addEventListener('mouseleave', ()=> {
-      clearInterval(timer);
-      timer = setInterval(()=>{
-        idx = (idx + 1) % total;
-        goTo(idx);
-      }, intervalMs);
-    });
+  function startTicker(){
+    const width = ticker.parentElement.offsetWidth;
+    const textWidth = ticker.scrollWidth;
+    pos = width;
 
-    // make sure first frame correct
-    goTo(0);
-  })();
-
-
-  // ===== TV NEWS TICKER =====
-  (function(){
-    const ticker = document.getElementById('newsTicker');
-    let pos = 0;
-    // initial translate to right outside viewport
-    // We'll use requestAnimationFrame for smoothness
-    function start(){
-      const containerWidth = ticker.parentElement.clientWidth;
-      const textWidth = ticker.scrollWidth;
-      // start position = containerWidth
-      pos = containerWidth;
-      let speed = 1.2; // pixels per frame approx - ছোট করলে ধীর হবে, বড় করলে দ্রুত হবে
-
-      let lastTime = null;
-      function step(time){
-        if (!lastTime) lastTime = time;
-        const delta = time - lastTime;
-        lastTime = time;
-        // move based on delta to keep framerate-independent
-        pos -= speed * (delta / (1000/60)); // normalize to 60fps baseline
-        ticker.style.transform = `translateX(${pos}px)`;
-        if (pos + textWidth < 0){
-          // reset to start again
-          pos = containerWidth;
-        }
-        requestAnimationFrame(step);
+    function move(){
+      pos--;
+      ticker.style.transform = `translateX(${pos}px)`;
+      if(pos < -textWidth){
+        pos = width;
       }
-      requestAnimationFrame(step);
+      requestAnimationFrame(move);
     }
+    move();
+  }
 
-    // Start when DOM ready
-    if (document.readyState === 'loading'){
-      document.addEventListener('DOMContentLoaded', start);
-    } else start();
-
-    // pause marquee on hover
-    ticker.parentElement.addEventListener('mouseenter', ()=> {
-      ticker.style.animationPlayState = 'paused';
-      // To pause rAF-based, we could add a flag — simpler: reduce speed to 0 by setting CSS var, but we used rAF numeric method.
-      // For simplicity of this snippet, hovering will not fully stop rAF; if you want full pause, let me know and I'll add a pause flag.
-    });
-  })();
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", startTicker);
+  } else startTicker();
+})();
 </script>
-<!-- ====== SECTION END ====== -->
+
 
 
 
@@ -371,6 +318,7 @@
 </body>
 
 </html>
+
 
 
 
